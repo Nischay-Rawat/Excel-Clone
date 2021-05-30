@@ -1,14 +1,51 @@
+* {
+  box-sizing: border-box;
+
+  --color--primary: #107c41;
+}
+html {
+  font-size: 62.5%;
+}
 .container {
   height: 100vh;
-  border: 1 px solid red;
 }
 .title-bar {
   height: 5vh;
+  background-color: var(--color--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  color: #fff;
 }
+/* menu  */
+
 .menu-bar {
   height: 5vh;
+  font-size: 1.8rem;
+  color: white;
+  display: flex;
+  background-color: #107c41;
 }
-.menu.icon-bar {
+.menu-bar .selected {
+  background-color: #fff;
+  color: var(--color--primary);
+}
+
+.menu__items {
+  padding: 0 1rem 0 1rem;
+  display: flex;
+  align-items: center;
+}
+.menu__items:hover {
+  background-color: #0c522b;
+  cursor: pointer;
+}
+.menu__items.selected {
+  background-color: #fff;
+  cursor: default;
+}
+.menu-icon-bar {
   height: 6vh;
 }
 .formula-bar {
@@ -16,4 +53,7 @@
 }
 .data-container {
   height: 74vh;
+}
+.sheet-bar {
+  height: 4vh;
 }
