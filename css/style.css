@@ -47,6 +47,35 @@ html {
 }
 .menu-icon-bar {
   height: 6vh;
+
+  background-color: rgb(240, 240, 240);
+  display: flex;
+  align-items: center;
+}
+.selector {
+  height: 60%;
+
+  min-width: 8rem;
+
+  max-width: 100px;
+
+  font-size: 1.5rem;
+  border-radius: 2px;
+}
+.font__size_selector {
+  margin-left: 0.8rem;
+  min-width: 5rem;
+}
+
+.menu__icons {
+  display: flex;
+  align-items: center;
+
+  height: 100%;
+  padding: 0 1rem 0 1rem;
+}
+.menu__icons:hover {
+  background-color: lightgray;
 }
 .formula-bar {
   height: 5vh;
