@@ -137,6 +137,13 @@ html {
 .right-button {
   display: block;
   font-size: 2.9rem;
+  cursor: pointer;
+}
+.left-button:hover,
+.right-button:hover {
+  background-color: rgb(226, 226, 226);
+  transform: scale(0.9);
+  border-radius: 100px;
 }
 
 .select_all {
@@ -155,14 +162,41 @@ html {
   width: calc(100vw - 30px);
   height: 30px;
   border: 1px solid lightgray;
+  display: flex;
 }
 .row__name_container {
   height: calc(75vh - 30px);
   width: 30px;
   border: 1px solid lightgrey;
+  overflow: hidden;
 }
-.input__cell_container {
+.input-cell-container {
   height: calc(75vh - 30px);
   width: calc(100vw - 30px);
   border: 1px solid lightgrey;
+}
+.row-name {
+  text-align: center;
+  font-size: 1.8rem;
+  border-bottom: 1px solid lightgrey;
+  min-height: 25px;
+}
+.col-name {
+  min-width: 100px;
+  text-align: center;
+  border-right: 1px solid lightgrey;
+  font-size: 1.8rem;
+}
+.input__cell__row {
+  max-width: 100px;
+  min-height: 25px;
+  max-height: 25px;
+  min-width: 100px;
+  border: 1px solid lightgray;
+  border-collapse: collapse;
+  font-size: 1.8rem;
+  overflow-y: hidden;
+}
+.input__row {
+  display: flex;
 }
