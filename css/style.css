@@ -91,6 +91,9 @@ html {
 }
 .formula-bar {
   height: 5vh;
+  background: rgb(240, 240, 240);
+  display: flex;
+  align-items: center;
 }
 .sheet-bar {
   height: 4vh;
@@ -182,12 +185,15 @@ html {
   min-height: 25px;
 }
 .col-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-width: 100px;
-  text-align: center;
+
   border-right: 1px solid lightgrey;
   font-size: 1.8rem;
 }
-.input__cell__row {
+.input__cell {
   max-width: 100px;
   min-height: 25px;
   max-height: 25px;
@@ -196,7 +202,52 @@ html {
   border-collapse: collapse;
   font-size: 1.8rem;
   overflow-y: hidden;
+  outline-color: var(--color--primary);
 }
 .input__row {
   display: flex;
+}
+.bar1,
+.formula-container {
+  background-color: white;
+  margin-left: 0.7rem;
+  padding-right: 0.7rem;
+  padding-left: 0.7rem;
+  font-size: 1.8rem;
+}
+.bar1 {
+  width: 10.2rem;
+  border: 1px solid lightgray;
+}
+.formula-icon {
+  width: 30px;
+  background-color: white;
+  padding-right: 0.5rem;
+  margin-left: 0.5rem;
+}
+.formula-container {
+  padding-top: 0.3rem;
+  width: calc(100vw - 10.2rem - 30px);
+  text-transform: capitalize;
+  text-shadow: #0001;
+  outline-color: var(--color--primary);
+}
+.formula-height {
+  height: 80%;
+}
+.menu__icons.selected {
+  background-color: rgb(204, 201, 201);
+}
+.align-pos {
+  margin: 0.1rem;
+}
+.style-icon {
+  margin-left: 0.1rem;
+}
+.first-align {
+  margin-left: 0.5rem;
+}
+.input__cell.selected {
+  
+  border: 2px solid var(--color--primary);
 }

@@ -36,7 +36,7 @@ for(let i=1;i<=100;i++)
         let rowcont=$( `<div class="input__row">`);
         for(let j=1;j<=100;j++){
             let code=$(`.colId-${j}`).attr("id").split("-")[1];
-           let rowshorizontal=$( `<div class="input__cell__row" contenteditable="true" id="row-${i}-col-${j} " data="code-${code}" ></div>`);
+           let rowshorizontal=$( `<div class="input__cell" contenteditable="false" id="row-${i}-col-${j} " data="code-${code}" ></div>`);
 
 
         
@@ -50,7 +50,23 @@ for(let i=1;i<=100;i++)
 
 
 
-
+$(".align-pos").click(function () { 
+   $(".align-pos.selected").removeClass("selected");
+   
+  $(this).addClass("selected");
+  
+});
+$(".style-icon").click(function () { 
+    $(this).toggleClass("selected");
+    
+});
+$(".input__cell").click(function () { 
+    $(".input__cell.selected").removeClass("selected");
+   
+    $(this).addClass("selected");
+    
+    
+});
 
 
 });
