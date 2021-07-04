@@ -166,6 +166,7 @@ html {
   height: 30px;
   border: 1px solid lightgray;
   display: flex;
+  overflow:hidden;
 }
 .row__name_container {
   height: calc(75vh - 30px);
@@ -177,6 +178,7 @@ html {
   height: calc(75vh - 30px);
   width: calc(100vw - 30px);
   border: 1px solid lightgrey;
+  overflow: scroll;
 }
 .row-name {
   text-align: center;
@@ -189,6 +191,7 @@ html {
   justify-content: center;
   align-items: center;
   min-width: 100px;
+  max-width:100px;
 
   border-right: 1px solid lightgrey;
   font-size: 1.8rem;

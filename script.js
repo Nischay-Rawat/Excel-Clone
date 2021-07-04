@@ -61,12 +61,36 @@ $(".style-icon").click(function () {
     
 });
 $(".input__cell").click(function () { 
+    
     $(".input__cell.selected").removeClass("selected");
    
     $(this).addClass("selected");
+  
+   
     
     
-});
+})
+$(".input__cell").dblclick(function () { 
+    
+    $(".input__cell.selected").removeClass("selected");
+    $('this').addClass('selected');
+   
+    $(this).attr('contenteditable','true');
+    $(this).focus();
+  
+   
+    
+    
+})
+$('.input-cell-container').scroll(function(){
+    console.log(this.scrollLeft);
+    $(".column__name_container").scrollLeft(this.scrollLeft);
+})
+$('.input-cell-container').scroll(function(){
+    console.log(this.scrollTop);
+    $(".row__name_container").scrollTop(this.scrollTop);
+})
+
 
 
 });
