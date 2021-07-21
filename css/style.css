@@ -166,7 +166,7 @@ html {
   height: 30px;
   border: 1px solid lightgray;
   display: flex;
-  overflow:hidden;
+  overflow: hidden;
 }
 .row__name_container {
   height: calc(75vh - 30px);
@@ -191,7 +191,7 @@ html {
   justify-content: center;
   align-items: center;
   min-width: 100px;
-  max-width:100px;
+  max-width: 100px;
 
   border-right: 1px solid lightgrey;
   font-size: 1.8rem;
@@ -251,6 +251,19 @@ html {
   margin-left: 0.5rem;
 }
 .input__cell.selected {
-  
   border: 2px solid var(--color--primary);
+}
+.input__cell.top-cell-selected{
+ border-top:none;
+
+}
+.input__cell.bottom-cell-selected{
+ border-bottom:1px solid lightgrey;
+}
+.input__cell.left-cell-selected{
+  border-left:1px solid lightgrey;
+
+}
+.input__cell.right-cell-selected{
+  border-right:none;
 }
