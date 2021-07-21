@@ -127,12 +127,30 @@ $(".input__cell").click(function (e) {
     }   
 
  $(this).addClass('selected');
+ changeHeader(this);
  
  
 
   
     
 })
+function changeHeader(element){
+    let[row,col]=getcolrow(element);
+    let cellinfo=defaultProporties;
+    if(cellData[selectedSheet][row]&&cellData[selectedSheet][row][col]){
+        cellinfo=cellData[selectedSheet][row][col];
+    }
+ cellinfo['font-weight']?$('.icon-bold').addClass('selected'):$('.icon-bold').removeClass('selected');
+ cellinfo['text-decoration']?$('.icon-underline').addClass('selected'):$('.icon-underline').removeClass('selected');
+ cellinfo['font-style']?$('.icon-italic').addClass('selected'):$('.icon-italic').removeClass('selected');
+ let positon=cellinfo['text-align'];
+ $('.align-pos.selected').removeClass('selected');
+ $('.icon-align_'+positon).addClass('selected');
+
+
+
+
+}
 $(".input__cell").dblclick(function () { 
     
     $(".input__cell.selected").removeClass("selected");
